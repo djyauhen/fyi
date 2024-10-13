@@ -1,0 +1,32 @@
+<div class="container" *ngIf="work">
+  <div class="work-item-image">
+    <swiper-container
+      effect="cube" grab-cursor="true" cube-effect-shadow="true"
+      cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94" loop="true">
+      <swiper-slide *ngFor="let workImage of work.files">
+        <div class="work-item-image-bg" style="background-image: url({{workImage}})" title="{{work.name}}"></div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <div class="work-item-text-block">
+    <div class="work-item-text title">
+      {{work.name}}
+    </div>
+    <div class="work-item-text type">
+      Тип приложения (работы):
+     <span>{{work.type}}</span>
+    </div>
+    <div class="work-item-text work-link">
+      Ссылка на репозиторий на GitHub: <a href="{{work.github}}" target="_blank">{{work.github}}</a>
+    </div>
+    <div class="work-item-text work-link">
+      Ссылка на деплой на GitHub Pages: <a href="{{work.deploy}}" target="_blank">{{work.deploy}}</a>
+    </div>
+    <div class="work-item-text ">
+      Время затраченное на работу: <span>{{work.timeToWork}}</span>
+    </div>
+  </div>
+  <div class="work-item-description">
+    {{work.aboutWork}}
+  </div>
+</div>

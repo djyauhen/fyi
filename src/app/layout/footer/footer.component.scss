@@ -1,0 +1,150 @@
+.footer {
+  background: #3A3A53;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-left {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 51px;
+
+      .logo {
+        margin: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          height: 52px;
+        }
+      }
+
+      .menu-items {
+        display: none;
+      }
+
+      .social-nets {
+        max-width: 100px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 13px;
+
+        .social-net:hover {
+          opacity: 0.6;
+        }
+      }
+
+      .rights {
+        color: #FFF;
+        font-family: Sen, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+    .footer-right {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 86px;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        max-width: 478px;
+
+        .menu-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 196px;
+          height: 48px;
+          margin: 0;
+          cursor: pointer;
+
+          a {
+            color: #FFF;
+            font-family: Sen, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            margin: 0;
+            text-decoration: none;
+
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer {
+
+    .container {
+
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+
+
+        .menu-items {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0 86px;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          max-width: 478px;
+
+          .menu-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 196px;
+            height: 48px;
+            margin: 0;
+
+            a {
+              color: #FFF;
+              font-family: Sen, sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 24px */
+              margin: 0;
+              text-decoration: none;
+              text-align: center;
+
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-right {
+        display: none;
+      }
+    }
+  }
+}

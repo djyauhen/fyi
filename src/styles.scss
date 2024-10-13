@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Sen;
+  src: url("./assets/fonts/Sen-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Sen;
+  src: url("./assets/fonts/Sen-Bold.ttf");
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #181823;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 120px 72px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: Sen, sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle {
+  font-family: Sen, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.link {
+  margin: 0;
+  font-family: Sen, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.button {
+  padding: 24px 32px;
+  font-family: Sen, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #181823;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+
+.arrow {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5B6876;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 150;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #454e59;
+  }
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth
+}
+
+
+.p-galleria {
+
+  .p-galleria-content {
+    max-width: 636px;
+    max-height: 736px;
+
+    .p-galleria-thumbnail-container {
+      height: 100px;
+
+      .p-galleria-thumbnail-items .p-galleria-thumbnail-item-content {
+        img {
+          height: 100px;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 768px;
+    padding: 80px 40px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+}

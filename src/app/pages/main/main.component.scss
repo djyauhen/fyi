@@ -1,0 +1,816 @@
+.main-screen {
+  position: relative;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .main-image {
+      max-width: 468px;
+      max-height: 703px;
+      margin: 0 52px 0 0;
+
+      img {
+        max-width: 468px;
+        max-height: 703px;
+      }
+    }
+
+    .main-text {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .main-title {
+        color: #FFF;
+        font-family: Sen, sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+
+        span {
+          color: rgba(255, 255, 255, 0.50);
+        }
+      }
+
+      .main-description {
+        color: #FFF;
+        font-family: Sen, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.philosophy {
+  background: linear-gradient(125deg, #DFDFDF 0%, #FFF 100%);
+  display: flex;
+
+  .container {
+    max-width: calc(1440px / 2);
+    box-sizing: border-box;
+    margin-right: 0;
+
+    .philosophy-title {
+      color: #181823;
+      margin-bottom: 15px;
+    }
+
+    .philosophy-subtitle {
+      color: #5B6876;
+      margin-bottom: 15px;
+    }
+
+    .philosophy-link {
+      color: #181823;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #181823;
+      text-decoration: none;
+    }
+  }
+
+  .philosophy-image {
+    margin: 0;
+    width: calc(50%);
+    background-image: url("../../../assets/images/philosophy.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.skills {
+
+  .container {
+    display: flex;
+    gap: 24px;
+
+    .skills-text {
+      max-width: 416px;
+      margin: 0;
+
+      .skills-title {
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+
+      .skills-subtitle {
+        color: #8491A0;
+      }
+    }
+
+    .skills-items {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      .skill-item {
+        width: 416px;
+        margin: 0;
+
+        .skill-item-icon {
+          margin-bottom: 8px;
+        }
+
+        .skill-item-title {
+          color: #FFF;
+          font-family: Sen, sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+        }
+
+        .skill-item-description {
+          color: #8491A0;
+          font-family: Sen, sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  background: linear-gradient(156deg, #DFDFDF 0%, #FFF 100%);
+
+  .container {
+
+    .works-title {
+      color: #181823;
+      margin-bottom: 90px;
+    }
+
+    .works-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+
+      .works-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 636px;
+        box-sizing: border-box;
+
+        .works-action-button {
+          color: #181823;
+
+          &.button:hover {
+            background: #181823;
+            color: #D9D9D9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.instagram {
+  display: flex;
+
+  .container {
+    max-width: calc(1440px / 2);
+    box-sizing: border-box;
+    margin-right: 0;
+
+    .instagram-title {
+      color: #FFF;
+      margin-bottom: 90px;
+    }
+
+    .instagram-subtitle {
+      margin-bottom: 90px;
+      color: #D9D9D9;
+    }
+
+    .instagram-link {
+      color: #FFF;
+    }
+  }
+
+  .instagram-background {
+    margin: 0;
+    width: 50%;
+    background-image: url("../../../assets/images/inst.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.github {
+  background: linear-gradient(156deg, #DFDFDF 0%, #FFF 100%);
+
+  .container {
+
+    .github-title {
+      margin-bottom: 32px;
+      color: #181823;
+    }
+
+    .github-subtitle {
+      margin-bottom: 32px;
+      color: #8491A0;
+    }
+
+    .github-link {
+      color: #181823;
+    }
+
+    .github-image {
+      margin-top: 82px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.order {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .order-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      margin: 0;
+      max-width: 526px;
+
+      .order-title {
+        color: #FFF;
+        margin: 0;
+      }
+
+      .order-description {
+        color: #8491A0;
+      }
+    }
+
+    .order-form {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      margin: 0;
+      max-width: 564px;
+
+
+      .order-form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        .order-form-input {
+
+          .input {
+            padding: 13px 25px;
+            background: #3A3A53;
+            color: #FFF;
+            font-family: Sen, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            border: 1px solid #3A3A53;
+            box-sizing: border-box;
+            width: 564px;
+
+            &::placeholder {
+              color: #FFF;
+            }
+
+            &.error {
+              border: 1px solid #FF0000FF;
+            }
+          }
+        }
+      }
+
+      .order-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 564px;
+        padding: 24px 32px;
+        color: #FFF;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+
+        &:hover:not(:disabled) {
+          background: #FFFFFF;
+          color: #181823;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          color: gray;
+          background: #343434;
+        }
+      }
+    }
+  }
+}
+
+
+.order-popup {
+  padding: 100px 50px;
+  position: relative;
+  text-align: center;
+  color: #3A3A53;
+
+  .order-popup-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .popup-title {
+    margin-bottom: 40px;
+  }
+
+  .popup-content div {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+
+.mat-typography {
+  padding: 70px;
+
+  .about-project-popup {
+    position: relative;
+
+    .about-project-popup-close {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .about-project-container {
+      width: 100%;
+
+      .about-project-item-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .about-project-item-image {
+          width: 40%;
+          margin: 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .about-project-item-text {
+          width: 50%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .about-project-item-title {
+            color: #3A3A53;
+            font-family: Sen, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+          }
+
+          .about-project-item-property {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            gap: 15px;
+
+            .about-project-item-property-title {
+              color: #3A3A53;
+              font-family: Sen, sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              margin: 0;
+              width: 150px;
+            }
+
+            .about-project-item-property-body {
+              color: #3A3A53;
+              font-family: Sen, sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              margin: 0;
+              overflow-x: hidden;
+            }
+          }
+        }
+      }
+
+      .about-project-item-description {
+        color: #3A3A53;
+        font-family: Sen, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+.menu-popup {
+
+  .popup-menu-items {
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+    .popup-menu-item {
+      a {
+        color: #000;
+        font-family: Sen, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      &:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.70);
+
+        a {
+          color: rgba(0, 0, 0, 0.70);
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1439px) {
+
+  .main-screen {
+    position: unset;
+
+    .container {
+
+      .main-image {
+        max-width: 344px;
+        max-height: 488px;
+        margin: 0 6px 0 0;
+
+        img {
+          max-width: 344px;
+          max-height: 488px;
+        }
+      }
+
+      .main-text {
+        gap: 10px;
+
+        .main-title {
+          font-size: 48px;
+        }
+
+        .main-description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .philosophy {
+    .container {
+      max-width: calc(768px / 2);
+      padding-left: 30px;
+      padding-right: 22px;
+    }
+  }
+
+  .skills {
+    .container {
+      flex-direction: column;
+
+      .skills-items {
+        .skill-item {
+          width: 329px;
+        }
+      }
+    }
+  }
+
+
+  .instagram {
+    display: flex;
+
+    .container {
+      max-width: calc(768px / 2);
+    }
+  }
+
+  .order {
+    .container {
+      gap: 24px;
+
+      .order-form {
+        max-width: 564px;
+
+        .order-form-inputs {
+          gap: 21px;
+
+          .order-form-input {
+            .input {
+              width: 332px;
+              padding: 13px 15px;
+            }
+
+            textarea {
+              height: 100px;
+            }
+          }
+        }
+
+        .order-button {
+          width: 332px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .mat-typography {
+    padding: 50px;
+
+    .about-project-popup {
+      position: relative;
+
+      .about-project-popup-close {
+        top: -15px;
+      }
+
+      .about-project-container {
+
+        .about-project-item-top {
+          flex-direction: column;
+          align-items: center;
+
+          .about-project-item-image {
+            width: 100%;
+          }
+
+          .about-project-item-text {
+            width: 100%;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .main-screen {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+
+      .main-image {
+        max-width: 236px;
+        max-height: 335px;
+
+        img {
+          max-width: 236px;
+          max-height: 335px;
+        }
+      }
+
+      .main-text {
+        .main-title {
+          font-size: 32px;
+          text-align: center;
+        }
+
+        .main-description {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .philosophy {
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      max-width: 320px;
+      padding: 40px 10px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .philosophy-image {
+      width: 100%;
+      height: 468px;
+    }
+  }
+
+  .skills {
+
+    .container {
+
+
+      .skills-items {
+
+        .skill-item {
+          width: 300px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .works {
+
+    .container {
+      .works-title {
+        margin-bottom: 30px;
+      }
+
+      .works-items {
+        gap: 20px;
+        margin-bottom: 30px;
+
+
+        .works-action {
+          width: 300px;
+        }
+      }
+
+    }
+  }
+
+  .instagram {
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      max-width: 320px;
+      gap: 20px;
+      margin: 0 auto;
+
+      .instagram-title {
+        color: #FFF;
+        margin-bottom: 0;
+      }
+
+      .instagram-subtitle {
+        margin-bottom: 0;
+      }
+    }
+
+    .instagram-background {
+      width: 100%;
+      height: 455px;
+    }
+  }
+
+  .github {
+    background: linear-gradient(156deg, #DFDFDF 0%, #FFF 100%);
+
+    .container {
+
+      .github-title {
+        margin-bottom: 20px;
+      }
+
+      .github-subtitle {
+        margin-bottom: 20px;
+      }
+
+      .github-image {
+        margin-top: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .order {
+    .container {
+
+      .order-text {
+        gap: 20px;
+      }
+
+      .order-form {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        margin: 0;
+        max-width: 310px;
+
+
+        .order-form-inputs {
+
+          .order-form-input {
+
+            .input {
+              padding: 10px 20px;
+              width: 310px;
+            }
+
+            textarea {
+              height: 70px;
+            }
+          }
+        }
+
+        .order-button {
+          width: 310px;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+
+
+  .mat-typography {
+    padding: 20px;
+
+    .about-project-popup {
+
+      .about-project-popup-close {
+        top: -15px;
+      }
+
+      .about-project-container {
+
+        .about-project-item-top {
+          margin-bottom: 15px;
+
+
+          .about-project-item-text {
+
+            .about-project-item-title {
+              font-size: 18px;
+            }
+
+            .about-project-item-property {
+              flex-direction: column;
+
+              .about-project-item-property-title {
+                font-size: 14px;
+                margin: auto;
+                width: 100%;
+              }
+
+              .about-project-item-property-body {
+                font-size: 14px;
+                margin: auto;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .about-project-item-description {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+

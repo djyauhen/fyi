@@ -1,0 +1,180 @@
+<section class="main-screen" id="firstScreen">
+  <div class="container">
+    <div class="main-image">
+      <img src="./assets/images/1screen.webp" alt="Мое фото">
+    </div>
+    <div class="main-text">
+      <h1 class="main-title">
+        Я - Фурса Евгений. Frontend-разработчик <span>из Беларуси.</span>
+      </h1>
+      <div class="main-description">
+        Я, наверное, самый увлеченный разработчик, с которым вам когда-либо доводилось работать.
+      </div>
+      <div class="main-description">
+        Если у вас есть отличный проект, требующий крутых навыков, я тот, кто Вам нужен.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy" id="philosophy" #philosophy>
+  <div class="container">
+    <h2 class="title philosophy-title">
+      Философия и ценности
+    </h2>
+    <div class="subtitle philosophy-subtitle">
+      Моя философия заключается в постоянном стремлении к превосходству и достижении результатов. Я верю, что труд и
+      усердие являются ключевыми факторами успеха. Мне важны качество и инновации, я постоянно совершенствую свои
+      навыки, чтобы предоставлять лучшие решения и сервис для моих клиентов.
+    </div>
+  </div>
+  <div class="philosophy-image"></div>
+</section>
+
+<section class="skills" id="skills" #skills>
+  <div class="container">
+    <div class="skills-text">
+      <h2 class="title skills-title">
+        Мои навыки
+      </h2>
+      <div class="subtitle skills-subtitle">
+        Моими навыками являются владение HTML, CSS, JS, TS и Angular, что позволяет мне создавать красивые и
+        функциональные веб-приложения с простым и удобным пользовательским интерфейсом
+      </div>
+    </div>
+
+    <div class="skills-items">
+      <div class="skill-item" *ngFor="let skill of skillsItems">
+        <div class="skill-item-icon">
+          <img src="./assets/images/icons/{{skill.image}}" alt="{{skill.name}}">
+        </div>
+        <div class="skill-item-title">
+          {{skill.name}}
+        </div>
+        <div class="skill-item-description">
+          {{skill.description}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works" #works>
+  <div class="container">
+    <h2 class="title works-title">
+      Работы за год
+    </h2>
+    <div class="works-items">
+      <work-card *ngFor="let work of worksItems" [work]="work"></work-card>
+      <div class="works-action">
+        <button class="button works-action-button" routerLink="works">Показать все проекты</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="instagram" id="instagram" #instagram>
+  <div class="container">
+    <h2 class="title instagram-title">
+      Instagram
+    </h2>
+    <div class="subtitle instagram-subtitle">
+      При желании можете посетить мой профиль в Instagram и понаблюдать за моментами создания сайтов, приложений и более
+      подробно познакомиться со мной
+    </div>
+    <a class="link instagram-link" href="https://www.instagram.com/evgenij_frontend_developer/" target="_blank">Перейти
+      в Instagram</a>
+  </div>
+  <div class="instagram-background"></div>
+</section>
+
+
+<section class="github" id="github" #github>
+  <div class="container">
+    <h2 class="title github-title">
+      GitHub
+    </h2>
+    <div class="subtitle github-subtitle">
+      По ссылке ниже, Вы попадаете на мой профиль GitHub. На данном веб-сервисе, Вы можете поближе познакомиться с моими
+      работами, проверить работоспособность некоторых сайтов и приложений, познакомиться с моим кодом
+    </div>
+    <a class="link github-link" href="https://github.com/Djyauhen" target="_blank">Перейти на GitHub</a>
+    <div class="github-image">
+      <img src="./assets/images/github.webp" alt="GitHub">
+    </div>
+  </div>
+</section>
+
+<section class="order" id="order" #order>
+  <div class="container">
+    <div class="order-text">
+      <h2 class="title order-title">
+        Итак, начнем!
+      </h2>
+      <div class="subtitle order-description">
+        Теперь Вы знаете обо мне. Если Вы хотите начать со мной работать - напишите мне!
+      </div>
+    </div>
+    <div class="order-form">
+      <div class="order-form-inputs" [formGroup]="form">
+        <div class="order-form-input">
+          <input type="text" class="input" name="order-name" id="order-name" placeholder="Имя*" formControlName="name"
+                 [class]="{'error': form.get('name')?.invalid
+                 && (form.get('name')?.dirty || form.get('name')?.touched)}">
+        </div>
+        <div class="order-form-input">
+          <input type="text" class="input" name="order-phone" id="order-phone" placeholder="Телефон*"
+                 formControlName="phone"
+                 [class]="{'error': form.get('phone')?.invalid
+                 && (form.get('phone')?.dirty || form.get('phone')?.touched)}">
+        </div>
+        <div class="order-form-input">
+          <input type="text" class="input" name="order-email" id="order-email" placeholder="E-mail"
+                 formControlName="email">
+        </div>
+        <div class="order-form-input">
+          <textarea class="input" name="order-message*" id="order-message" cols="30" rows="10"
+                    placeholder="Сообщение*" formControlName="message"
+                    [class]="{'error': form.get('message')?.invalid
+                 && (form.get('message')?.dirty || form.get('message')?.touched)}"></textarea>
+        </div>
+        <div class="order-form-input">
+          <input type="checkbox" class="checkbox" name="form-agree" id="form-agree" formControlName="agree" required>
+          <label for="form-agree">Даю согласие на обработку персональных данных</label>
+        </div>
+      </div>
+      <button
+        [matTooltipDisabled]="form.valid"
+        matTooltip="Заполните поля отмеченные *"
+        class="button order-button" [disabled]="!form.valid" (click)="sendMessage()">Отправить
+      </button>
+    </div>
+  </div>
+</section>
+
+<ng-template #popup>
+  <div class="order-popup">
+    <div class="order-popup-close" (click)="closePopup()">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.93562" y1="2.6499" x2="13.9564" y2="14.6707" stroke="#A8ABA7" stroke-linecap="round"/>
+        <line x1="13.9238" y1="2.62971" x2="1.90301" y2="14.6505" stroke="#A8ABA7" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div *ngIf="popupMessage">
+      <div class="title popup-title">Благодарим за сообщение!</div>
+      <div class="subtitle popup-content">
+        <div>С Вами свяжутся в течении 15 минут.</div>
+      </div>
+    </div>
+
+    <div *ngIf="!popupMessage">
+      <div class="title popup-title">Извините!</div>
+      <div class="subtitle popup-content">
+        <div>Возникла ошибка. Повторите позже.</div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+

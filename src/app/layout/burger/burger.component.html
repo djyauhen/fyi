@@ -1,0 +1,8 @@
+<div class="menu">
+  <ul class="menu-items">
+    <li class="menu-item" *ngFor="let menuItem of menuItems">
+      <a class="menu-item-link" routerLink="{{menuItem.href}}" fragment="{{menuItem.fragment}}" [mat-dialog-close]="menuItem">{{menuItem.title}}</a>
+    </li>
+  </ul>
+</div>
+

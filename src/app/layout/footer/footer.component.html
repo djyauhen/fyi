@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <div class="logo"  [routerLink]="['']">
+        <img src="./assets/images/Logo.png" alt="Logo">
+      </div>
+      <div class="menu-items">
+        <div class="menu-item" *ngFor="let menuItem of menuItems">
+          <a routerLink="{{menuItem.href}}" fragment="{{menuItem.fragment}}">{{menuItem.surname}}</a>
+        </div>
+      </div>
+      <div class="social-nets">
+        <div class="social-net" *ngFor="let social of socialsItems">
+          <a href="{{social.href}}" target="_blank"><img src="./assets/images/social/{{social.image}}"
+                                                         alt="{{social.name}}"></a>
+        </div>
+      </div>
+      <div class="rights">
+        Not Copyright {{year}} • Fursa Yauheni
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="menu-items">
+        <div class="menu-item" *ngFor="let menuItem of menuItems">
+          <a routerLink="{{menuItem.href}}" fragment="{{menuItem.fragment}}">{{menuItem.surname}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
