@@ -55,7 +55,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "https://djyauhen.github.io/my_multi_site/"
+              "baseHref": "https://fyi-ecru.vercel.app"
             },
             "development": {
               "optimization": false,
